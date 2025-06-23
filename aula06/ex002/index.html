@@ -31,9 +31,9 @@
         Evite se tornar um 'programador alfabeto' ou um 'programador contador.'
     </p>
     <script>
-        window.alert("Este site te ensina comentários em JS.") /* Vai te alertar.*/
-        window.confirm("Você irá entrar no site!") // Vai te perguntar se você ainda quer continuar no site.
-        var nome = window.prompt("Você pode dar um feedback sobre o site?") // Vai te fazer uma pergunta.
+        // também pode ser usado no lugar de "var", o "let" e o "const". Funciona, porém há diferenças.
+        var feedback = window.prompt("Você pode dar um feedback sobre o site?") // Vai te fazer uma pergunta.
+        window.alert("Obrigado pelo seu feedback. Seu feedback: " + feedback) // Conccatenação
     </script>
 </body>
 </html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window.prompt</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Comentarios</h1>
+    <p>Os comentários podem ser escritos entre /**/ ou após //.</p>
+
+    <h1>Variáveis</h1>
+    <p>
+        Identificadores podem começar com letra ou $ ou _.<br>
+        Não podem começar com números.<br>
+        É possível usar letras e números.<br>
+        É possível usar acentos e símbolos.<br>
+        Não podem conter espaços.<!-- Os espaços podem ser substituídos pos sublinhados(_).--><br>
+        Não podem ser palavras reservadas. <!-- Como exemplo palavras que o JavaScript usa, exemplo: Alert, Confirm,  e etc.-->
+    </p>
+
+    <h2>Dicas</h2>
+    <p>
+        Maiúsculas e Minúsculas fazewm diferença.<br>
+        Tente escolher nomes coerentes para variáveis.<br>
+        Evite se tornar um 'programador alfabeto' ou um 'programador contador.'
+    </p>
+    <script>
+       var n1 = Number(window.prompt("Digite um número")) // Recebem o valor de String
+       var n2 = Number(window.prompt("Digite outro número")) // Recebem o valor de String
+       var soma = n1 + n2
+       window.alert(`A soma entre os valores ${n1} e ${n2} é ${soma}.`) // Concatenação
+        // O + serve para adição. Para funcionar como adição deve ser "number + number".
+        // O + serve para concatenação. Para funcionar como adição deve ser "string + string".
+        
+        /* Conversão de (type) - string para number
+        Number.parseInt(n)  <-- Usado para converter em número inteiro
+        Number.parseFloat(n)  <-- Usado para converter em real 
+        Number(n)  <-- Usado no lugar dos dois anterios. É mais atual.*/
+        
+        /* Conversão de (type) - number para string
+        String(n)  <-- Usado para converter em número inteiro
+        n.toString()*/
+
+        /* Formatando Strings
+        var s = 'JavaScript'
+        'Eu estou aprendendo s' // Nao faz interpolação
+        'Eu estou aprendendo ' + s // Usa concatenação
+        `Eu estou aprendendo ${s}` // Usa template string
+
+        s.lenght  // quantos caracteres a string tem
+        s.toUpperCase()  // Tudo para 'MAIÚSCULAS'
+        s.toLowerCase()  // Tudo para 'minusculas'
+        */
+
+    </script>
+</body>
+</html>
