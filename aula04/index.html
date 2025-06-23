@@ -3,26 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <title>Comentários em JavaScript</title>
     <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
         }
-        body{
-            background-color: yellow;
-        }
-        h1{
-            color: green;
-        }
     </style>
 </head>
 <body>
-    <h1>JavaScript</h1><hr>
-    <p>Fazendo os primeiros scripts.</p>
+    <h1>Comentarios</h1>
+    <p>Os comentários podem ser escritos entre /**/ ou após //.</p>
+
+    <h1>Variáveis</h1>
+    <p>
+        Identificadores podem começar com letra ou $ ou _.<br>
+        Não podem começar com números.<br>
+        É possível usar letras e números.<br>
+        É possível usar acentos e símbolos.<br>
+        Não podem conter espaços.<!-- Os espaços podem ser substituídos pos sublinhados(_).--><br>
+        Não podem ser palavras reservadas. <!-- Como exemplo palavras que o JavaScript usa, exemplo: Alert, Confirm,  e etc.-->
+    </p>
+
+    <h2>Dicas</h2>
+    <p>
+        Maiúsculas e Minúsculas fazewm diferença.<br>
+        Tente escolher nomes coerentes para variáveis.<br>
+        Evite se tornar um 'programador alfabeto' ou um 'programador contador.'
+    </p>
     <script>
-        window.alert("Oi usuário principal")
-        window.confirm("Este site, não passa de um teste!")
-        window.prompt("Qual o seu site favorito?")
+        window.alert("Este site te ensina comentários em JS.") /* Vai te alertar.*/
+        window.confirm("Você irá entrar no site!") // Vai te perguntar se você ainda quer continuar no site.
+        window.prompt("Você pode dar um feedback sobre o site?") // Vai te fazer uma pergunta.
     </script>
 </body>
 </html>
