@@ -56,6 +56,15 @@
         n1.toFixed(2).replace('.', ',')
         n1
         > 1988,50
+
+        > n1.toLocaleString("pt-br", {style: "currency", currency: "BRL"})
+        'R$ 1.988,50'
+        > n1.toLocaleString("pt-br", {style: "currency", currency: "USD"})
+        'US$ 1.988,50'
+        > n1.toLocaleString("en", {style: "currency", currency: "USD"})
+        '$1,988.50'
+        > n1.toLocaleString("en", {style: "currency", currency: "BRL"})
+        'R$1,988.50'
         */
     </script>
 </body>
