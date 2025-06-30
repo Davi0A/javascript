@@ -37,7 +37,7 @@ article {
     max-width: 70%;
     padding-bottom: 40px;
     flex: 0 1 700px;
-    height: 293px;
+    min-height: 293px; 
     
     transition: all 2s ease-in-out, trasform 3s ease;
 }
@@ -45,7 +45,7 @@ article {
 article.active {
     background-color: rgb(100, 0, 200);
     flex-basis: 400px;
-    height: 500px;
+    min-height: 500px;
     color: white;
     transform: rotate(360deg);
 }

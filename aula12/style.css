@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    /* overflow: hidden; */
+}
+
+article {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(209, 209, 94);
+}
+
+section {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    max-width: 650px;
+    width: 80%;
+    height: 400px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 30px black;
+
+    color: black;
+    background-color: white;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 20px;
+
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.8em; 
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+.imagem {
+    width: 250px;
+    height: 250px;
+    border: 5px solid black;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 100px black;
+}
+
+.manha {
+    background: url(imagens/manha.jpg) center center;
+    background-size: cover;
+    display: none;
+}
+
+.tarde {
+    background: url(imagens/tarde.jpg) center center;
+    background-size: cover;
+    display: none;
+}
+.noite {
+    background: url(imagens/noite.jpg) center center;
+    background-size: cover;
+    display: none;
+}
+
+.madrugada {
+    background: url(imagens/madrugada.jpg) center center;
+    background-size: cover;
+    display: none;
+}
+
+.active{
+    display: block;
+}
