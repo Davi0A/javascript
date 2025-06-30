@@ -10,7 +10,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: black;
-    /* overflow: hidden; */
+    overflow: hidden; 
 }
 
 section {
@@ -22,7 +22,7 @@ section {
 
 main {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     
@@ -111,7 +111,5 @@ h3 {
         border-radius: 0px;
     }
 
-    .erro {
-
-    }
+    
 }
