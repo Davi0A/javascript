@@ -1,5 +1,7 @@
 var day = new Date()
 var hora = day.getHours()
+var min = day.getMinutes()
+var sec = day.getSeconds()
 var contHours = document.getElementsByTagName('h3')[0]
 var manha = document.getElementById('manha')
 var tarde = document.getElementById('tarde')
@@ -8,7 +10,7 @@ var madrugada = document.getElementById('madrugada')
 var erro = document.getElementById('erro')
 var fundo = document.getElementsByTagName('section')[0]
 
-contHours.innerHTML = `Agora são ${hora} horas.`
+contHours.innerHTML = `Agora são ${hora}:${min}:${sec} horas.`
 
 if (hora == 1) {
     madrugada.classList.add('active')
