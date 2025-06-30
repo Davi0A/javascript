@@ -106,9 +106,9 @@ h3 {
     main {
         padding: 0px;
         width: 90vw;
-        height: 800px;
+        min-height: 100vh;
         border-radius: 0px;
-        transition: width 1s ease;
+        transition: width 1s ease, min-height 1s ease, border-radius 3s ease;
     }
     
     h1 {
