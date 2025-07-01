@@ -10,7 +10,8 @@ var madrugada = document.getElementById('madrugada')
 var erro = document.getElementById('erro')
 var fundo = document.getElementsByTagName('section')[0]
 
-contHours.innerHTML = `Agora são ${hora}:${min}:${sec} horas.`
+// contHours.innerHTML = `Agora são ${hora}:${min}:${sec} horas.`
+contHours.innerHTML = `Agora são ${hora} horas.`
 
 if (hora == 1) {
     madrugada.classList.add('active')
